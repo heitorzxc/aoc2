@@ -5,7 +5,6 @@ dados1="-cache:dl1 dl1:32:16:1:r"
 dados2="-cache:dl2 none"
 
 # cache de instruções níveis 1 e 2
-
 instr1="-cache:il1 il1:32:16:1:r"
 instr2="-cache:il2 none"
 
