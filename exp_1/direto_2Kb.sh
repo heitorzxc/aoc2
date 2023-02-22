@@ -1,17 +1,12 @@
 #!/bin/bash
 
-nsets=128
-bsize=16
-assoc=1
-repl=r
-
 # cache de dados níveis 1 e 2
-dados1="-cache:dl1 dl1:$nsets:$bsize:$assoc:$repl"
+dados1="-cache:dl1 dl1:128:16:1:r"
 dados2="-cache:dl2 none"
 
 # cache de instruções níveis 1 e 2
 
-instr1="-cache:il1 il1:$nsets:$bsize:$assoc:$repl"
+instr1="-cache:il1 il1:128:16:1:r"
 instr2="-cache:il2 none"
 
 # TLB de dados e instruções (ausentes)
