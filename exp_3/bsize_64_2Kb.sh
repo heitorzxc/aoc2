@@ -1,14 +1,12 @@
 #!/bin/bash
-
-# bsize=32 determinado pelo exercício 
-# perda da associatividade total por que 1 * 32 * 8 = 512
+# <name>:<nsets>:<bsize>:<assoc>:<repl>
 
 # cache de dados níveis 1 e 2
-dados1="-cache:dl1 dl1:1:32:8:l"
+dados1="-cache:dl1 dl1:32:64:1:r"
 dados2="-cache:dl2 none"
 
 # cache de instruções níveis 1 e 2
-instr1="-cache:il1 il1:1:32:8:l"
+instr1="-cache:il1 il1:32:64:1:r"
 instr2="-cache:il2 none"
 
 # TLB de dados e instruções (ausentes)
