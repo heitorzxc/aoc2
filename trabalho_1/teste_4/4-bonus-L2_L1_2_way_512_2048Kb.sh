@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# cache dados nível 1 (512Kb) e cache unificada nível 2 (4Kb)
+# cache dados nível 1 (512Kb) e cache dados nível 2 (2Kb)
 dados1="-cache:dl1 dl1:16:16:2:r"
-dados2="-cache:dl2 ul2:64:32:2:r"
+dados2="-cache:dl2 dl2:32:32:2:r"
 
-# cache instruções nível 1 (512Kb) e cache unificada nível 2 (4Kb)
+# cache instruções nível 1 (512Kb) e cache instruções nível 2 (2Kb)
 instr1="-cache:il1 il1:16:16:2:r"
-instr2="-cache:il2 dl2"
+instr2="-cache:il2 il2:32:32:2:r"
 
 # TLB de dados e instruções (ausentes)
 tlb1="-tlb:dtlb none"
